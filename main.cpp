@@ -203,8 +203,6 @@ int main() {
         c = c1 - c2;
     }
 
-    cout << a << " " << b << " " << c << endl;
-
     if (a == 0) //Не правильно определено условие для проверки a
     {
         cout << "Not a quadratic equation!" << endl;
