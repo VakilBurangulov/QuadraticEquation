@@ -19,6 +19,10 @@ int main() {
         bool isFoundCharEquals = false;
         for (int i = 0; i < equation.length(); i++) {
             if (equation[i] == '=') {
+                if (isFoundCharEquals) {
+                    cout << "Invalid input";
+                    return 1;
+                }
                 isFoundCharEquals = true;
             }
             else if (isFoundCharEquals) {
