@@ -209,7 +209,8 @@ int main() {
 
     if (a == 0) //Не правильно определено условие для проверки a
     {
-        cout << "Not a quadratic equation!" << endl;
+        float x = -c / b;
+        cout << "Root: " << x << endl;
     } else if (a + c == b) { // Добавил проверку теоремы окожфициентах для возможного ускорения хода программы
         float x1 = -1.;
         float x2 = -c / a;
