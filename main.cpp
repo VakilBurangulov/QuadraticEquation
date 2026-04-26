@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     string equation;
     cout << "Enter Equation:" << endl;
-    cin >> equation;
+    getline(cin, equation);
 
     string firstPart, secondPart;
 
@@ -25,10 +25,10 @@ int main() {
                 }
                 isFoundCharEquals = true;
             }
-            else if (isFoundCharEquals) {
+            else if (isFoundCharEquals && equation[i] != ' ') {
                 secondPart += equation[i];
             }
-            else {
+            else if (!isFoundCharEquals && equation[i] != ' ') {
                 firstPart += equation[i];
             }
         }
