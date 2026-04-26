@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <cctype>
 
 using namespace std;
 
@@ -247,4 +246,7 @@ int main() {
             cout << "Complex scenario is not supported!" << endl;
         }
     }
+
+    string temp;
+    getline(cin, temp);
 }
